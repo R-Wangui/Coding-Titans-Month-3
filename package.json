@@ -1,0 +1,15 @@
+{
+  "name": "coding-titans-ecommerce",
+  "version": "1.0.0",
+  "description": "Creating a product page using fake APIs",
+  "main": "categories.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+
+  ],
+  "author": "Coding Titans",
+  "license": "ISC"
+}
