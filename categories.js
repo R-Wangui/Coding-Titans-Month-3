@@ -32,6 +32,6 @@ document.addEventListener('click' , ()=> {
         currPage++
     })
     
-    More();
+    moreProduct();
     
 })
