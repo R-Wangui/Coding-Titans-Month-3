@@ -1,3 +1,55 @@
+ /* styling for the nav bar */
+   nav{
+     display: flex;  
+     justify-content: space-between;
+     color: black;
+     background-color: white;
+     cursor: pointer;
+     height: 100px;
+     margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   h3 > a{
+       text-decoration: none;
+       color: black;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   h3 > a:hover{
+       text-decoration: underline 2px rgb(228, 8, 8);
+        text-underline-offset:  8px ;
+   }
+   .cta{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 0px;
+   }
+   .shop{
+       margin-right: 60px;
+       margin-left: 30px;
+       font-size: 20px;
+   }
+   .support{
+       margin-left: 60px;
+       font-size: 20px;
+       margin-right: 20px;
+   }
+   
+   .nav-logo{
+       display: flex;
+       align-items: flex-start;
+       justify-content: left;
+       margin-top: 30px;
+       margin-left: 15px;
+   }
+
+
+
+/* styling for the products */
+
+
 .container{
     width: 100%;
     overflow-x: hidden;
@@ -79,4 +131,131 @@ li .product{
    color: white;
    margin-left: auto;
    margin-right: auto;
+}
+
+
+/* styling for the footer */
+footer {
+   background-color: white;
+   margin-top: 50px;
+   overflow-x: hidden;
+}
+
+.footer-main {
+   display: flex;
+   justify-content: center;
+   padding:15px 25px;
+    margin-bottom: 45px;
+   border: 3px solid white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/*.follow{
+   border: 2px solid black;
+   margin-left: 0px;
+   padding-left: 0px;
+   display: flex;
+   justify-content:flex-start;
+}*/
+
+.links, a {
+   display: grid;
+   grid-template-columns: repeat(4 4fr);
+   gap: 10px;
+   list-style-type: none;
+   color: black;
+   text-decoration: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:300px;
+   font-size: 15px;
+   padding-right: 40px;
+   padding-left: 40px;
+
+}
+
+.big-text {
+   color: black;
+   font-size: 15px;
+   font-weight: 400px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding-right: 40px;
+   padding-left: 40px;
+
+}
+.legal,.follow{
+   padding-left: 0px;
+   padding-right: 0px;
+   margin-left: 0px;
+
+}
+
+.brands {
+   display: flex;
+   gap: 40px;
+   color: gray;
+   font-size: 20px;
+   padding-left: 40px;
+}
+
+.brands:hover{
+   cursor: pointer;
+   color: black;
+}
+.brands img {
+   width: 40px;
+   height: 40px;
+   background: white;
+   border-radius: 20px;
+}
+
+.all-icons {
+   margin: 45px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: grey;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 8px;
+}
+
+.copy{
+display:flex;
+size: 15px;
+justify-content: center;
+color: lightgray;
+}
+.bn{
+   width: 200px;
+   border: 1px solid black;
+   border-radius: 30px;
+   margin-left: 35px;
+   background-color: white;
+   margin-top: 3px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 4px;
+}
+.bn:hover{
+   background-color: black;
+   color: white;
+}
+
+/* @media screen and (min-width: 1920px){ 
+   .body{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   }
+} */
+@media screen and (max-width:768px) {
+   .cards,.container{
+       display: flex;
+       flex-direction: column;
+       flex-grow: 100;
+       align-items: center;
+       justify-content: center;
+       
+   }
 }
