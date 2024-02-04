@@ -28,7 +28,8 @@ async function getOneProduct() {
           ${product.description}
       </div>
       <div class="price">
-         ${product.price} USD
+      <p>PRICE</p>
+         $${product.price}
       </div>
   </div>
   
