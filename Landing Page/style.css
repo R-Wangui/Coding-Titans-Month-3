@@ -20,7 +20,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     h3 > a:hover{
-        text-decoration: underline 2px rgb(228, 8, 8);
+        text-decoration: underline 2px black;
          text-underline-offset:  8px ;
     }
     .cta{
@@ -29,11 +29,35 @@
         align-items: center;
         margin-top: 0px;
     }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
     .shop{
+        position: relative;
+        display: inline-block;
         margin-right: 60px;
         margin-left: 30px;
         font-size: 20px;
     }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 60px;
+      }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     .home{
         margin-left: 60px;
         font-size: 20px;

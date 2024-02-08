@@ -1,11 +1,11 @@
-// ? Gets one product from fakestoreapi.com
+// Gets one product from fakestoreapi.com
 async function getOneProduct() {
     const data = await fetch("https://fakestoreapi.com/products/category/electronics/1");
     const res = await data.json();
     return res;
   }
   
-  // ? Gets many products from fakestoreapi.com
+  // Gets many products from fakestoreapi.com
   async function getProducts(amount) {
     const data = await fetch(`https://fakestoreapi.com/products/category/electronics?limit=${amount}`);
     const res = await data.json();
