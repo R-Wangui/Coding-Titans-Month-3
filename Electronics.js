@@ -39,12 +39,12 @@ async function getOneProduct() {
   }
   
   let counter = 0;
-  let products = await getProducts(2);
+  let products = await getProducts(3);
   displayProducts(products);
   
   const button = document.getElementsByClassName("btn");
   button[0].addEventListener("click", async () => {
-    counter += 2;
+    counter += 3;
     const data = await getProducts(products.length + counter);
     products = data.slice(counter);
     displayProducts(products);

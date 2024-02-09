@@ -542,3 +542,35 @@
             
         }
      }
+     /* Media query for small screens */
+     @media (max-width: 768px) {
+        .navbar {
+          padding: 10px;
+        }
+      
+        .footer {
+          padding: 15px;
+        }
+      }
+
+      /* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+      padding: 15px;
+    }
+  
+    .footer {
+      padding: 20px;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 1025px) {
+    .navbar {
+      padding: 20px;
+    }
+  
+    .footer {
+      padding: 25px;
+    }
+  }

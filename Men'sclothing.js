@@ -1,6 +1,6 @@
  // Gets one product from fakestoreapi.com
  async function getOneProduct() {
-    const data = await fetch("https://fakestoreapi.com/products/category/men'sclothing/1");
+    const data = await fetch("https://fakestoreapi.com/products/category/men's%20clothing/1");
     const res = await data.json();
     return res;
   }
@@ -9,7 +9,7 @@
 
   // Gets many products from fakestoreapi.com
   async function getProducts(amount) {
-    const data = await fetch(`https://fakestoreapi.com/products/category/men'sclothing?limit=${amount}`);
+    const data = await fetch(`https://fakestoreapi.com/products/category/men's%20clothing?limit=${amount}`);
     const res = await data.json();
   
     return res;
@@ -41,12 +41,12 @@
   }
   
   let counter = 0;
-  let products = await getProducts(2);
+  let products = await getProducts(3);
   displayProducts(products);
   
   const button = document.getElementsByClassName("btn");
   button[0].addEventListener("click", async () => {
-    counter += 2;
+    counter += 3;
     const data = await getProducts(products.length + counter);
     products = data.slice(counter);
     displayProducts(products);
